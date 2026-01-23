@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificador de Bandeira de Cartão de Crédito</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Identificador de Bandeira de Cartão de Crédito</h1>
+        <div class="card-preview">
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-type" id="card-type">Bandeira</span>
+                </div>
+                <div class="card-number" id="card-number">**** **** **** ****</div>
+                <div class="card-details">
+                    <div class="card-name" id="card-name">NOME DO TITULAR</div>
+                    <div class="card-expiry" id="card-expiry">MM/YY</div>
+                </div>
+                <div class="card-cvv" id="card-cvv">CVV</div>
+            </div>
+        </div>
+        <form id="card-form">
+            <div class="form-group">
+                <label for="card-number-input">Número do Cartão:</label>
+                <input type="text" id="card-number-input" placeholder="Digite o número do cartão" maxlength="19">
+            </div>
+            <div class="form-group">
+                <label for="card-name-input">Nome do Titular:</label>
+                <input type="text" id="card-name-input" placeholder="Nome completo">
+            </div>
+            <div class="form-group">
+                <label for="card-expiry-input">Data de Validade (MM/YY):</label>
+                <input type="text" id="card-expiry-input" placeholder="MM/YY" maxlength="5">
+            </div>
+            <div class="form-group">
+                <label for="card-cvv-input">Código de Segurança (CVV):</label>
+                <input type="text" id="card-cvv-input" placeholder="CVV" maxlength="4">
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
