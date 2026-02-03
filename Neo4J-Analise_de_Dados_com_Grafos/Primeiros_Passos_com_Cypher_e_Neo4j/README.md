@@ -24,6 +24,8 @@ The main script is `main.cypher` which uses a small dataset encoded as JSON to c
   - `(:Usuario)-[:CURTE_GENERO {weight}]->(:Genero)` — user likes a genre
   - `(:Musica)-[:INTERPRETADA_POR]->(:Artista)` — music interpreted by an artist
 
+![Visualização Geral do Grafo](imagens/image.png)
+
 > Note: `main.cypher` was updated to add **placeholder `image` properties** to `Musica` and `Artista` nodes (points to `imagens/image.png`). You can replace these with per-node image filenames.
 
 ---
